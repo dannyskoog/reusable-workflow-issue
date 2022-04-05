@@ -1,0 +1,9 @@
+name: Dev release
+on:
+  pull_request_review:
+    types: [submitted, edited]
+
+jobs:
+  dummy-job:
+    name: Dummy job
+    uses: ./.github/workflows/reusable.yaml
