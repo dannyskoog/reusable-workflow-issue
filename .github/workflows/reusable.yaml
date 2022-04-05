@@ -1,0 +1,11 @@
+on:
+  workflow_call:
+
+jobs:
+  echo-job:
+    name: Echo job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Echo
+        run: echo "Reusable workflow ran"
